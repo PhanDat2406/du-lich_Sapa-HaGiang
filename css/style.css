@@ -93,32 +93,63 @@ html{
 
 /* slider */
 
-#slider{
+.slidershow-container{
     position: relative;
-    margin-top: 46px;
-    padding-top: 50%;
-    background: url("/images/du-lich-sapa-ha-giang.jpg") top center/cover no-repeat;
+    
 }
 
-#slider .text-content{
+.mySliders {
+    margin-top: 46px;
+    /* display: none; */
+}
+
+.mySliders img{
+    width: 100%;
+    height: 48rem;
+    object-fit: cover;
+}
+
+.text-content{
     position: absolute;
     color: #fff;
-    bottom: 27px;
+    bottom: 75px;
     text-align: center;
     width: 100%;
 }
 
-#slider .text-heading{
+.text-heading{
     font-weight: 500;
     font-size: 24px;
-
 }
 
-#slider .text-description{
+.text-description{
     font-size: 15px;
     margin-top: 25px;
     text-shadow: 0 0 1px;
 }
+
+.prev, 
+.next{
+    position: absolute;
+    text-decoration: none;
+    cursor: pointer;
+    top: 50%;
+    margin: -52px 16px 0;
+    font-size: 50px;
+    color: #000;
+    transition: 0.6s ease;
+}
+
+.next{
+    right: 0;
+}
+
+.prev:hover, 
+.next:hover{
+    color: #fff;
+}
+
+
 
 /* ----------------------------------------------- */
 
@@ -155,8 +186,10 @@ html{
 
 
 .about-img:hover img {
+    cursor: pointer;
     transform: scale(1); 
-    filter: grayscale(0); 
+    filter: none; 
+
 }
 
 
@@ -380,6 +413,16 @@ html{
     padding-right: 12px;
 }
 
+.footer-bottom{
+    text-align: center;
+    background-color: #E0E0E0;
+}
+
+.footer-copy{
+    padding: 2px;
+    font-size: 15px;
+}
+
 
 
 
@@ -394,19 +437,7 @@ html{
 
 
 /* note
-hết tuần này phài làm phần trang chủ đến phần footer
-
-làm xong thì làm đến mấy cái ý tưởng dưới này nếu có thể được trong tuần này luôn 
-
-tìm kiếm logo ...
-
-ý tưởng cho phần điểm đến trên thanh head làm bằng js hoặc di vào đấy hiển thị menu con 
-
-tìm hiểu làm phần slider tầm 3 ảnh trở lên bằng js
-
-191 đúp vào văn bản hiển thị hình từ display :contents   ->     display: block;
-131 cho hình mờ , khi hover vào hình net và phóng to ra 
-phần khu vực điểm đến link từ trang chủ đến phần con của phần điểm đến
+191 đúp vào văn bản hiển thị hình từ display :none   ->     display: block; 
 
 
 */
