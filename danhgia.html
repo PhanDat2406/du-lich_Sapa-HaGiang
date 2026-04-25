@@ -16,18 +16,105 @@
             </div>
             <div class="nav">
                 <ul>
-                    <li><a href="">Điểm đến</a></li>
-                    <li><a href="">Văn hóa-lễ hội</a></li>
-                    <li><a href="">Ẩm thực</a></li>
-                    <li><a href="">Kinh nghiệm du lịch</a></li>
-                    <li><a href="">Lịch trình gợi ý</a></li>
-                    <li><a href="">Đánh giá du lịch</a></li>
+                    <li><a href="diemden.html">Điểm đến</a></li>
+                    <li><a href="vanhoa.html">Văn hóa-lễ hội</a></li>
+                    <li><a href="amthuc.html">Ẩm thực</a></li>
+                    <li><a href="kinhnghiem.html">Kinh nghiệm du lịch</a></li>
+                    <li><a href="lichtrinh.html">Lịch trình gợi ý</a></li>
+                    <li><a href="danhgia.html">Đánh giá du lịch</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-<!-- content -->
+    
+    <!-- content -->
+<style>
+  .review-sec { background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); padding: 100px 5% 80px; min-height: 100vh; font-family: 'Arial', sans-serif; }
+  .review-title { text-align: center; font-size: 3rem; color: #222; margin-bottom: 15px; font-weight: 800; }
+  .review-subtitle { text-align: center; color: #888; margin-bottom: 60px; font-size: 1.2rem; }
+  .review-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; max-width: 1200px; margin: auto; }
+  .review-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-radius: 20px; padding: 35px; border: 1px solid rgba(255,255,255,0.5); box-shadow: 0 15px 35px rgba(0,0,0,0.05); position: relative; transition: transform 0.3s; }
+  .review-card:hover { transform: translateY(-5px); background: #fff; }
+  .quote-icon { font-size: 60px; color: #E8ECEF; position: absolute; top: 10px; right: 20px; font-family: serif; line-height: 1; }
+  .reviewer { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; position: relative; z-index: 1; }
+  .reviewer-img { width: 65px; height: 65px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+  .reviewer-name { font-weight: bold; font-size: 1.2rem; color: #333; margin-bottom: 4px; }
+  .stars { color: #FFD700; font-size: 1.1rem; }
+  .review-text { font-size: 1.05rem; color: #555; line-height: 1.6; font-style: italic; position: relative; z-index: 1; }
+</style>
+<div class="review-sec">
+    <h1 class="review-title">Phản Hồi Từ Du Khách</h1>
+    <p class="review-subtitle">Hàng ngàn du khách đã có những trải nghiệm không thể quên</p>
+    <div class="review-grid">
+        <div class="review-card">
+            <div class="quote-icon">"</div>
+            <div class="reviewer">
+                <img class="reviewer-img" src="https://picsum.photos/100/100?random=23" alt="Avatar">
+                <div>
+                    <div class="reviewer-name">Nguyễn An</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <p class="review-text">Chuyến đi Hà Giang thực sự mở mang tầm mắt. Phong cảnh hùng vĩ ngoài sức tưởng tượng, người dân rất thân thiện. Mình đặc biệt ấn tượng với dòng sông Nho Quế xanh biếc.</p>
+        </div>
+        <div class="review-card">
+            <div class="quote-icon">"</div>
+            <div class="reviewer">
+                <img class="reviewer-img" src="https://picsum.photos/100/100?random=24" alt="Avatar">
+                <div>
+                    <div class="reviewer-name">Trần Linh</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <p class="review-text">Sapa rực rỡ và nhộn nhịp, đồ ăn ngon, không khí mát mẻ dễ chịu. Cáp treo Fansipan là một trải nghiệm tuyệt vời, không nên bỏ lỡ khi tới đây. View cực kỳ đỉnh cao!</p>
+        </div>
+        <div class="review-card">
+            <div class="quote-icon">"</div>
+            <div class="reviewer">
+                <img class="reviewer-img" src="https://picsum.photos/100/100?random=25" alt="Avatar">
+                <div>
+                    <div class="reviewer-name">Hoàng Minh</div>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <p class="review-text">Homestay ở bản Cát Cát rất xinh, view nhìn thẳng ra ruộng bậc thang ngút ngàn. Một kỳ nghỉ thư giãn hoàn hảo để xả stress sau những ngày làm việc mệt mỏi ở thành phố.</p>
+        </div>
+        <div class="review-card">
+            <div class="quote-icon">"</div>
+            <div class="reviewer">
+                <img class="reviewer-img" src="https://picsum.photos/100/100?random=26" alt="Avatar">
+                <div>
+                    <div class="reviewer-name">Lê Hà</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <p class="review-text">Chợ tình Sapa mang đậm nét văn hóa độc đáo. Mình rất thích cảm giác dạo bộ đêm muộn và ăn đồ nướng nóng hổi ven đường giữa tiết trời se se lạnh.</p>
+        </div>
+        <div class="review-card">
+            <div class="quote-icon">"</div>
+            <div class="reviewer">
+                <img class="reviewer-img" src="https://picsum.photos/100/100?random=27" alt="Avatar">
+                <div>
+                    <div class="reviewer-name">Phạm Tuấn</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <p class="review-text">Chinh phục đèo Mã Pí Lèng quả thực là một thử thách ngoạn mục và thú vị cho dân phượt. Cảm giác chạy xe trên con đường hiểm trở này thật khó tả, rất đáng trải nghiệm!</p>
+        </div>
+        <div class="review-card">
+            <div class="quote-icon">"</div>
+            <div class="reviewer">
+                <img class="reviewer-img" src="https://picsum.photos/100/100?random=28" alt="Avatar">
+                <div>
+                    <div class="reviewer-name">Đặng Mai</div>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <p class="review-text">Lần đầu được ăn món Thắng Dền ở Hà Giang, vị ngọt thanh và ấm bụng, rất hợp với thời tiết. Phong cảnh thì không cần bàn cãi, đứng góc nào chụp cũng có ảnh đẹp.</p>
+        </div>
+    </div>
+</div>
 
     <footer id="footer">
 
@@ -46,13 +133,13 @@
             <div class="footer-column footer-links">
                 <h3 class="footer-title">Liên kết nhanh</h3>
                 <ul class="footer-list mt-16">
-                    <li class="footer-item"><a href="#">Trang chủ</a></li>
-                    <li class="footer-item"><a href="#">Điểm đến</a></li>
-                    <li class="footer-item"><a href="#">Văn hóa lễ hội</a></li>
-                    <li class="footer-item"><a href="#">Ẩm thực</a></li>
-                    <li class="footer-item"><a href="#">Kinh nghiệm</a></li>
-                    <li class="footer-item"><a href="#">Lịch trình</a></li>
-                    <li class="footer-item"><a href="#">Đánh giá</a></li>
+                    <li class="footer-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="footer-item"><a href="diemden.html">Điểm đến</a></li>
+                    <li class="footer-item"><a href="vanhoa.html">Văn hóa lễ hội</a></li>
+                    <li class="footer-item"><a href="amthuc.html">Ẩm thực</a></li>
+                    <li class="footer-item"><a href="kinhnghiem.html">Kinh nghiệm</a></li>
+                    <li class="footer-item"><a href="lichtrinh.html">Lịch trình</a></li>
+                    <li class="footer-item"><a href="danhgia.html">Đánh giá</a></li>
                 </ul>
             </div>
     

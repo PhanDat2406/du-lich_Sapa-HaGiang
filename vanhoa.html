@@ -13,18 +13,67 @@
         <div class="logo-area">logo</div>
         <div class="nav">
           <ul>
-            <li><a href="">Điểm đến</a></li>
-            <li><a href="">Văn hóa-lễ hội</a></li>
-            <li><a href="">Ẩm thực</a></li>
-            <li><a href="">Kinh nghiệm du lịch</a></li>
-            <li><a href="">Lịch trình gợi ý</a></li>
-            <li><a href="">Đánh giá du lịch</a></li>
+            <li><a href="diemden.html">Điểm đến</a></li>
+            <li><a href="vanhoa.html">Văn hóa-lễ hội</a></li>
+            <li><a href="amthuc.html">Ẩm thực</a></li>
+            <li><a href="kinhnghiem.html">Kinh nghiệm du lịch</a></li>
+            <li><a href="lichtrinh.html">Lịch trình gợi ý</a></li>
+            <li><a href="danhgia.html">Đánh giá du lịch</a></li>
           </ul>
         </div>
       </div>
     </header>
 
+    
     <!-- content -->
+<style>
+  .culture-wrapper { background-color: #FAF6F0; padding-top: 100px; padding-bottom: 80px; font-family: 'Georgia', serif; }
+  .culture-header { text-align: center; margin-bottom: 4rem; }
+  .culture-header h1 { font-size: 3rem; color: #5D4037; margin-bottom: 1rem; font-weight: bold; }
+  .culture-header p { color: #795548; max-width: 700px; margin: auto; font-size: 1.2rem; line-height: 1.6; }
+  .culture-item { display: flex; max-width: 1100px; margin: 0 auto 6rem; align-items: center; gap: 4rem; padding: 0 20px; }
+  .culture-item:nth-child(even) { flex-direction: row-reverse; }
+  .culture-img { flex: 1; position: relative; }
+  .culture-img img { width: 100%; border-radius: 16px; box-shadow: -20px 20px 0px #D7CCC8; transition: 0.3s; }
+  .culture-item:nth-child(even) .culture-img img { box-shadow: 20px 20px 0px #D7CCC8; }
+  .culture-img:hover img { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+  .culture-text { flex: 1; }
+  .culture-text h2 { font-size: 2.2rem; color: #3E2723; margin-bottom: 1.2rem; position: relative; }
+  .culture-text h2::after { content: ''; display: block; width: 80px; height: 4px; background: #8D6E63; margin-top: 15px; border-radius: 2px; }
+  .culture-text p { font-size: 1.15rem; color: #5D4037; line-height: 1.8; margin-bottom: 20px; }
+  .culture-tag { display: inline-block; padding: 8px 16px; background: #EFEBE9; color: #5D4037; border-radius: 20px; font-size: 0.9rem; font-family: sans-serif; font-weight: bold; }
+  @media (max-width: 768px) { .culture-item, .culture-item:nth-child(even) { flex-direction: column; gap: 2rem; } .culture-img img { box-shadow: none !important; } }
+</style>
+<div class="culture-wrapper">
+    <div class="culture-header">
+        <h1>Văn Hóa & Lễ Hội</h1>
+        <p>Khám phá bản sắc độc đáo của các dân tộc vùng cao qua những phong tục và lễ hội truyền thống đặc sắc.</p>
+    </div>
+    <div class="culture-item">
+        <div class="culture-img"><img src="https://picsum.photos/600/450?random=7" alt="Lễ Cấp Sắc"></div>
+        <div class="culture-text">
+            <h2>Lễ Cấp Sắc</h2>
+            <p>Nghi lễ quan trọng của người Dao, đánh dấu sự trưởng thành của người đàn ông. Một nét văn hóa tín ngưỡng sâu sắc truyền từ ngàn đời, phản ánh vũ trụ quan và nhân sinh quan độc đáo.</p>
+            <span class="culture-tag">Người Dao</span>
+        </div>
+    </div>
+    <div class="culture-item">
+        <div class="culture-img"><img src="https://picsum.photos/600/450?random=8" alt="Chợ Phiên"></div>
+        <div class="culture-text">
+            <h2>Chợ Phiên Vùng Cao</h2>
+            <p>Không chỉ là nơi mua bán, trao đổi hàng hóa, chợ phiên còn là không gian sinh hoạt văn hóa cộng đồng rực rỡ sắc màu, nơi nam thanh nữ tú gặp gỡ, hò hẹn qua tiếng khèn tiếng sáo.</p>
+            <span class="culture-tag">Sinh hoạt cộng đồng</span>
+        </div>
+    </div>
+    <div class="culture-item">
+        <div class="culture-img"><img src="https://picsum.photos/600/450?random=9" alt="Múa Khèn"></div>
+        <div class="culture-text">
+            <h2>Múa Khèn H'Mông</h2>
+            <p>Điệu múa truyền thống thể hiện sức mạnh, sự khéo léo của các chàng trai bản. Âm thanh réo rắt của chiếc khèn hòa quyện cùng những bước nhảy điêu luyện tạo nên sức hút kỳ lạ.</p>
+            <span class="culture-tag">Nghệ thuật</span>
+        </div>
+    </div>
+</div>
 
     <footer id="footer">
       <div class="footer-container all grid-3">
@@ -41,13 +90,13 @@
         <div class="footer-column footer-links">
           <h3 class="footer-title">Liên kết nhanh</h3>
           <ul class="footer-list mt-16">
-            <li class="footer-item"><a href="#">Trang chủ</a></li>
-            <li class="footer-item"><a href="#">Điểm đến</a></li>
-            <li class="footer-item"><a href="#">Văn hóa lễ hội</a></li>
-            <li class="footer-item"><a href="#">Ẩm thực</a></li>
-            <li class="footer-item"><a href="#">Kinh nghiệm</a></li>
-            <li class="footer-item"><a href="#">Lịch trình</a></li>
-            <li class="footer-item"><a href="#">Đánh giá</a></li>
+            <li class="footer-item"><a href="index.html">Trang chủ</a></li>
+            <li class="footer-item"><a href="diemden.html">Điểm đến</a></li>
+            <li class="footer-item"><a href="vanhoa.html">Văn hóa lễ hội</a></li>
+            <li class="footer-item"><a href="amthuc.html">Ẩm thực</a></li>
+            <li class="footer-item"><a href="kinhnghiem.html">Kinh nghiệm</a></li>
+            <li class="footer-item"><a href="lichtrinh.html">Lịch trình</a></li>
+            <li class="footer-item"><a href="danhgia.html">Đánh giá</a></li>
           </ul>
         </div>
 

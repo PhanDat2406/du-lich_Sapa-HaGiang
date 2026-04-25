@@ -16,18 +16,84 @@
             </div>
             <div class="nav">
                 <ul>
-                    <li><a href="">Điểm đến</a></li>
-                    <li><a href="">Văn hóa-lễ hội</a></li>
-                    <li><a href="">Ẩm thực</a></li>
-                    <li><a href="">Kinh nghiệm du lịch</a></li>
-                    <li><a href="">Lịch trình gợi ý</a></li>
-                    <li><a href="">Đánh giá du lịch</a></li>
+                    <li><a href="diemden.html">Điểm đến</a></li>
+                    <li><a href="vanhoa.html">Văn hóa-lễ hội</a></li>
+                    <li><a href="amthuc.html">Ẩm thực</a></li>
+                    <li><a href="kinhnghiem.html">Kinh nghiệm du lịch</a></li>
+                    <li><a href="lichtrinh.html">Lịch trình gợi ý</a></li>
+                    <li><a href="danhgia.html">Đánh giá du lịch</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-<!-- content -->
+    
+    <!-- content -->
+<style>
+  .dest-hero { background: url('https://picsum.photos/1920/600?random=100') center/cover no-repeat; height: 50vh; display: flex; align-items: center; justify-content: center; position: relative; margin-top: 46px; }
+  .dest-hero::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.5); }
+  .dest-hero-content { position: relative; z-index: 1; text-align: center; color: #fff; }
+  .dest-hero-title { font-size: 3.5rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem; }
+  .dest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; padding: 4rem 5%; max-width: 1400px; margin: auto; }
+  .dest-card { position: relative; border-radius: 1rem; overflow: hidden; height: 450px; cursor: pointer; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.4s ease; }
+  .dest-card:hover { transform: translateY(-15px); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+  .dest-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
+  .dest-card:hover img { transform: scale(1.15); }
+  .dest-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 2.5rem; color: #fff; }
+  .dest-card-title { font-size: 1.8rem; margin-bottom: 0.8rem; font-weight: bold; }
+  .dest-card-desc { font-size: 1rem; opacity: 0; transform: translateY(20px); transition: 0.4s ease; line-height: 1.5; }
+  .dest-card:hover .dest-card-desc { opacity: 1; transform: translateY(0); }
+</style>
+<div class="dest-hero">
+    <div class="dest-hero-content">
+        <h1 class="dest-hero-title">Khám Phá Điểm Đến</h1>
+        <p style="font-size: 1.2rem; opacity: 0.9;">Những danh lam thắng cảnh tuyệt đẹp đang chờ đón bạn</p>
+    </div>
+</div>
+<div class="dest-grid">
+    <div class="dest-card">
+        <img src="https://picsum.photos/600/800?random=1" alt="Bản Cát Cát">
+        <div class="dest-card-overlay">
+            <h3 class="dest-card-title">Bản Cát Cát</h3>
+            <p class="dest-card-desc">Ngôi làng cổ kính của người H'Mông với vẻ đẹp mộc mạc và những thửa ruộng bậc thang tuyệt đẹp.</p>
+        </div>
+    </div>
+    <div class="dest-card">
+        <img src="https://picsum.photos/600/800?random=2" alt="Cột cờ Lũng Cú">
+        <div class="dest-card-overlay">
+            <h3 class="dest-card-title">Cột cờ Lũng Cú</h3>
+            <p class="dest-card-desc">Điểm cực Bắc thiêng liêng của Tổ quốc, nơi bạn có thể ngắm nhìn toàn cảnh đồi núi trập trùng.</p>
+        </div>
+    </div>
+    <div class="dest-card">
+        <img src="https://picsum.photos/600/800?random=3" alt="Sông Nho Quế">
+        <div class="dest-card-overlay">
+            <h3 class="dest-card-title">Sông Nho Quế</h3>
+            <p class="dest-card-desc">Dòng sông xanh biếc uốn lượn dưới chân đèo Mã Pí Lèng tạo nên một bức tranh thiên nhiên tuyệt mỹ.</p>
+        </div>
+    </div>
+    <div class="dest-card">
+        <img src="https://picsum.photos/600/800?random=4" alt="Thung lũng Mường Hoa">
+        <div class="dest-card-overlay">
+            <h3 class="dest-card-title">Thung lũng Mường Hoa</h3>
+            <p class="dest-card-desc">Nổi tiếng với những bãi đá cổ và khung cảnh thiên nhiên thơ mộng hữu tình của Sa Pa.</p>
+        </div>
+    </div>
+    <div class="dest-card">
+        <img src="https://picsum.photos/600/800?random=5" alt="Dinh Vua Mèo">
+        <div class="dest-card-overlay">
+            <h3 class="dest-card-title">Dinh Vua Mèo</h3>
+            <p class="dest-card-desc">Công trình kiến trúc độc đáo mang đậm dấu ấn lịch sử, nằm giữa thung lũng Sà Phìn.</p>
+        </div>
+    </div>
+    <div class="dest-card">
+        <img src="https://picsum.photos/600/800?random=6" alt="Hoàng Su Phì">
+        <div class="dest-card-overlay">
+            <h3 class="dest-card-title">Hoàng Su Phì</h3>
+            <p class="dest-card-desc">Mùa lúa chín vàng ươm trên những thửa ruộng bậc thang làm say đắm biết bao du khách.</p>
+        </div>
+    </div>
+</div>
 
     <footer id="footer">
 
@@ -46,13 +112,13 @@
             <div class="footer-column footer-links">
                 <h3 class="footer-title">Liên kết nhanh</h3>
                 <ul class="footer-list mt-16">
-                    <li class="footer-item"><a href="#">Trang chủ</a></li>
-                    <li class="footer-item"><a href="#">Điểm đến</a></li>
-                    <li class="footer-item"><a href="#">Văn hóa lễ hội</a></li>
-                    <li class="footer-item"><a href="#">Ẩm thực</a></li>
-                    <li class="footer-item"><a href="#">Kinh nghiệm</a></li>
-                    <li class="footer-item"><a href="#">Lịch trình</a></li>
-                    <li class="footer-item"><a href="#">Đánh giá</a></li>
+                    <li class="footer-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="footer-item"><a href="diemden.html">Điểm đến</a></li>
+                    <li class="footer-item"><a href="vanhoa.html">Văn hóa lễ hội</a></li>
+                    <li class="footer-item"><a href="amthuc.html">Ẩm thực</a></li>
+                    <li class="footer-item"><a href="kinhnghiem.html">Kinh nghiệm</a></li>
+                    <li class="footer-item"><a href="lichtrinh.html">Lịch trình</a></li>
+                    <li class="footer-item"><a href="danhgia.html">Đánh giá</a></li>
                 </ul>
             </div>
     

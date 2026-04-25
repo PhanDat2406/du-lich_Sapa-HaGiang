@@ -13,18 +13,73 @@
         <div class="logo-area">logo</div>
         <div class="nav">
           <ul>
-            <li><a href="">Điểm đến</a></li>
-            <li><a href="">Văn hóa-lễ hội</a></li>
-            <li><a href="">Ẩm thực</a></li>
-            <li><a href="">Kinh nghiệm du lịch</a></li>
-            <li><a href="">Lịch trình gợi ý</a></li>
-            <li><a href="">Đánh giá du lịch</a></li>
+            <li><a href="diemden.html">Điểm đến</a></li>
+            <li><a href="vanhoa.html">Văn hóa-lễ hội</a></li>
+            <li><a href="amthuc.html">Ẩm thực</a></li>
+            <li><a href="kinhnghiem.html">Kinh nghiệm du lịch</a></li>
+            <li><a href="lichtrinh.html">Lịch trình gợi ý</a></li>
+            <li><a href="danhgia.html">Đánh giá du lịch</a></li>
           </ul>
         </div>
       </div>
     </header>
 
+    
     <!-- content -->
+<style>
+  .itin-page { background: #E8ECEF; padding-top: 100px; padding-bottom: 80px; font-family: 'Arial', sans-serif; min-height: 100vh; }
+  .itin-title { text-align: center; color: #2C3E50; font-size: 3rem; margin-bottom: 60px; font-weight: bold; }
+  .itin-wrapper { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+  .itin-card { display: flex; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.05); margin-bottom: 40px; transition: transform 0.3s; }
+  .itin-card:hover { transform: translateY(-5px); box-shadow: 0 20px 45px rgba(0,0,0,0.1); }
+  .itin-img-box { width: 40%; position: relative; }
+  .itin-img-box img { width: 100%; height: 100%; object-fit: cover; }
+  .itin-badge { position: absolute; top: 20px; left: 20px; background: #E74C3C; color: #fff; padding: 8px 15px; border-radius: 30px; font-weight: bold; font-size: 0.9rem; letter-spacing: 1px; }
+  .itin-content { width: 60%; padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+  .itin-content h3 { font-size: 2rem; color: #2C3E50; margin-bottom: 15px; }
+  .itin-content p { font-size: 1.1rem; color: #7F8C8D; line-height: 1.7; margin-bottom: 25px; }
+  .itin-btn { align-self: flex-start; padding: 12px 25px; background: #34495E; color: #fff; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s; }
+  .itin-btn:hover { background: #E74C3C; }
+  @media (max-width: 768px) { .itin-card { flex-direction: column; } .itin-img-box, .itin-content { width: 100%; } .itin-img-box { height: 250px; } }
+</style>
+<div class="itin-page">
+    <h1 class="itin-title">Lịch Trình Gợi Ý</h1>
+    <div class="itin-wrapper">
+        <div class="itin-card">
+            <div class="itin-img-box">
+                <span class="itin-badge">2 NGÀY 1 ĐÊM</span>
+                <img src="https://picsum.photos/400/500?random=20" alt="Sapa">
+            </div>
+            <div class="itin-content">
+                <h3>Khám Phá Sapa Cổ Kính</h3>
+                <p>Ngắn ngày nhưng trọn vẹn: Sáng đón bình minh tại bản Cát Cát, trưa chinh phục đỉnh Fansipan hùng vĩ, tối dạo quanh thị trấn ngắm sương mù và thưởng thức đồ nướng ven đường.</p>
+                <a href="#" class="itin-btn">Xem chi tiết</a>
+            </div>
+        </div>
+        <div class="itin-card">
+            <div class="itin-img-box">
+                <span class="itin-badge">3 NGÀY 2 ĐÊM</span>
+                <img src="https://picsum.photos/400/500?random=21" alt="Ha Giang">
+            </div>
+            <div class="itin-content">
+                <h3>Phượt Hà Giang Ngoạn Mục</h3>
+                <p>Hành trình dành cho người yêu thích mạo hiểm: Vượt dốc Bắc Sum, ngắm núi đôi Quản Bạ, lang thang phố cổ Đồng Văn và check-in sống ảo tại đèo Mã Pí Lèng.</p>
+                <a href="#" class="itin-btn">Xem chi tiết</a>
+            </div>
+        </div>
+        <div class="itin-card">
+            <div class="itin-img-box">
+                <span class="itin-badge">5 NGÀY 4 ĐÊM</span>
+                <img src="https://picsum.photos/400/500?random=22" alt="Sapa Ha Giang">
+            </div>
+            <div class="itin-content">
+                <h3>Hành Trình Xuyên Tây Bắc</h3>
+                <p>Chuyến đi dài ngày khám phá toàn bộ tinh hoa đất trời Tây Bắc, kết nối hai vùng đất Sapa sương mù và cao nguyên đá Hà Giang. Trải nghiệm văn hóa đa sắc màu sâu sắc.</p>
+                <a href="#" class="itin-btn">Xem chi tiết</a>
+            </div>
+        </div>
+    </div>
+</div>
 
     <footer id="footer">
       <div class="footer-container all grid-3">
@@ -41,13 +96,13 @@
         <div class="footer-column footer-links">
           <h3 class="footer-title">Liên kết nhanh</h3>
           <ul class="footer-list mt-16">
-            <li class="footer-item"><a href="#">Trang chủ</a></li>
-            <li class="footer-item"><a href="#">Điểm đến</a></li>
-            <li class="footer-item"><a href="#">Văn hóa lễ hội</a></li>
-            <li class="footer-item"><a href="#">Ẩm thực</a></li>
-            <li class="footer-item"><a href="#">Kinh nghiệm</a></li>
-            <li class="footer-item"><a href="#">Lịch trình</a></li>
-            <li class="footer-item"><a href="#">Đánh giá</a></li>
+            <li class="footer-item"><a href="index.html">Trang chủ</a></li>
+            <li class="footer-item"><a href="diemden.html">Điểm đến</a></li>
+            <li class="footer-item"><a href="vanhoa.html">Văn hóa lễ hội</a></li>
+            <li class="footer-item"><a href="amthuc.html">Ẩm thực</a></li>
+            <li class="footer-item"><a href="kinhnghiem.html">Kinh nghiệm</a></li>
+            <li class="footer-item"><a href="lichtrinh.html">Lịch trình</a></li>
+            <li class="footer-item"><a href="danhgia.html">Đánh giá</a></li>
           </ul>
         </div>
 

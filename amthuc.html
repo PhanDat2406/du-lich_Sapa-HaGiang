@@ -16,18 +16,83 @@
             </div>
             <div class="nav">
                 <ul>
-                    <li><a href="">Điểm đến</a></li>
-                    <li><a href="">Văn hóa-lễ hội</a></li>
-                    <li><a href="">Ẩm thực</a></li>
-                    <li><a href="">Kinh nghiệm du lịch</a></li>
-                    <li><a href="">Lịch trình gợi ý</a></li>
-                    <li><a href="">Đánh giá du lịch</a></li>
+                    <li><a href="diemden.html">Điểm đến</a></li>
+                    <li><a href="vanhoa.html">Văn hóa-lễ hội</a></li>
+                    <li><a href="amthuc.html">Ẩm thực</a></li>
+                    <li><a href="kinhnghiem.html">Kinh nghiệm du lịch</a></li>
+                    <li><a href="lichtrinh.html">Lịch trình gợi ý</a></li>
+                    <li><a href="danhgia.html">Đánh giá du lịch</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-<!-- content -->
+    
+    <!-- content -->
+<style>
+  .food-page { background: #121212; color: #fff; padding-top: 100px; padding-bottom: 80px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; min-height: 100vh;}
+  .food-header { text-align: center; margin-bottom: 60px; }
+  .food-title { font-size: 3.5rem; color: #FF7043; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 4px; font-weight: 800; }
+  .food-subtitle { font-size: 1.3rem; color: #B0BEC5; max-width: 600px; margin: auto; }
+  .food-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; max-width: 1300px; margin: 0 auto; padding: 0 5%; }
+  .food-card { background: #1E1E1E; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #333; transition: 0.3s; }
+  .food-card:hover { transform: translateY(-10px); border-color: #FF7043; box-shadow: 0 20px 40px rgba(255, 112, 67, 0.2); }
+  .food-img-wrapper { position: relative; width: 100%; height: 260px; overflow: hidden; }
+  .food-img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+  .food-card:hover .food-img { transform: scale(1.1); }
+  .food-info { padding: 30px 25px; position: relative; }
+  .food-icon { position: absolute; top: -25px; right: 25px; width: 50px; height: 50px; background: #FF7043; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #fff; box-shadow: 0 5px 15px rgba(255,112,67,0.4); }
+  .food-info h3 { font-size: 1.6rem; margin-bottom: 15px; color: #fff; }
+  .food-info p { color: #9E9E9E; line-height: 1.7; font-size: 1rem; }
+</style>
+<div class="food-page">
+    <div class="food-header">
+        <h1 class="food-title">Ẩm Thực Vùng Cao</h1>
+        <p class="food-subtitle">Những món ngon mang hương vị đặc trưng của núi rừng Tây Bắc</p>
+    </div>
+    <div class="food-container">
+        <div class="food-card">
+            <div class="food-img-wrapper">
+                <img class="food-img" src="https://picsum.photos/500/400?random=12" alt="Lợn Bản">
+            </div>
+            <div class="food-info">
+                <div class="food-icon">🍖</div>
+                <h3>Lợn Bản Cắp Nách</h3>
+                <p>Thịt lợn săn chắc, thơm ngon, nướng hoặc hấp đều giữ được vị ngọt tự nhiên, ăn kèm lá nhội thì vô cùng hấp dẫn.</p>
+            </div>
+        </div>
+        <div class="food-card">
+            <div class="food-img-wrapper">
+                <img class="food-img" src="https://picsum.photos/500/400?random=13" alt="Cơm Lam">
+            </div>
+            <div class="food-info">
+                <div class="food-icon">🎋</div>
+                <h3>Cơm Lam Ống Tre</h3>
+                <p>Gạo nếp nương nướng trong ống tre chín mềm, dẻo thơm, ăn cùng muối vừng hoặc thịt nướng rất bắt vị.</p>
+            </div>
+        </div>
+        <div class="food-card">
+            <div class="food-img-wrapper">
+                <img class="food-img" src="https://picsum.photos/500/400?random=14" alt="Thịt Trâu">
+            </div>
+            <div class="food-info">
+                <div class="food-icon">🥩</div>
+                <h3>Thịt Trâu Gác Bếp</h3>
+                <p>Đặc sản đậm đà vị mắc khén, hạt dổi. Từng thớ thịt dai ngọt ngấm đều gia vị núi rừng, món quà biếu ý nghĩa.</p>
+            </div>
+        </div>
+        <div class="food-card">
+            <div class="food-img-wrapper">
+                <img class="food-img" src="https://picsum.photos/500/400?random=15" alt="Xôi">
+            </div>
+            <div class="food-info">
+                <div class="food-icon">🍚</div>
+                <h3>Xôi Ngũ Sắc</h3>
+                <p>Món xôi dẻo thơm được nhuộm màu từ các loại lá rừng tự nhiên, mang ý nghĩa ngũ hành và sự may mắn phồn vinh.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
     <footer id="footer">
 
@@ -46,13 +111,13 @@
             <div class="footer-column footer-links">
                 <h3 class="footer-title">Liên kết nhanh</h3>
                 <ul class="footer-list mt-16">
-                    <li class="footer-item"><a href="#">Trang chủ</a></li>
-                    <li class="footer-item"><a href="#">Điểm đến</a></li>
-                    <li class="footer-item"><a href="#">Văn hóa lễ hội</a></li>
-                    <li class="footer-item"><a href="#">Ẩm thực</a></li>
-                    <li class="footer-item"><a href="#">Kinh nghiệm</a></li>
-                    <li class="footer-item"><a href="#">Lịch trình</a></li>
-                    <li class="footer-item"><a href="#">Đánh giá</a></li>
+                    <li class="footer-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="footer-item"><a href="diemden.html">Điểm đến</a></li>
+                    <li class="footer-item"><a href="vanhoa.html">Văn hóa lễ hội</a></li>
+                    <li class="footer-item"><a href="amthuc.html">Ẩm thực</a></li>
+                    <li class="footer-item"><a href="kinhnghiem.html">Kinh nghiệm</a></li>
+                    <li class="footer-item"><a href="lichtrinh.html">Lịch trình</a></li>
+                    <li class="footer-item"><a href="danhgia.html">Đánh giá</a></li>
                 </ul>
             </div>
     
