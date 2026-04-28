@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nam xâm chiếm</title>
+    <title>Thiết kế website Sapa-Hà Giang</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="icons/themify-icons.css">
 </head>
@@ -12,16 +12,22 @@
 
         <div class="container">
             <div class="logo-area">
-                logo
+                <a href="index.html">SHG<span>⛰</span></a>
             </div>
             <div class="nav">
                 <ul>
-                    <li><a href="">Điểm đến</a></li>
-                    <li><a href="">Văn hóa-lễ hội</a></li>
-                    <li><a href="">Ẩm thực</a></li>
-                    <li><a href="">Kinh nghiệm du lịch</a></li>
-                    <li><a href="">Lịch trình gợi ý</a></li>
-                    <li><a href="">Đánh giá du lịch</a></li>
+                    <li class="has-sub-nav">
+                        <a href="#" onclick="toggleMenu(event)">Điểm đến</a>
+                        <ul class="sub-nav">
+                            <li><a href="sapa.html">Sapa</a></li>
+                            <li><a href="hagiang.html">Hà Giang</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="vanhoa.html">Văn hóa-lễ hội</a></li>
+                    <li><a href="amthuc.html">Ẩm thực</a></li>
+                    <li><a href="kinhnghiem.html">Kinh nghiệm du lịch</a></li>
+                    <li><a href="lichtrinh.html">Lịch trình gợi ý</a></li>
+                    <li><a href="danhgia.html">Đánh giá du lịch</a></li>
                 </ul>
             </div>
         </div>
@@ -112,8 +118,8 @@
             </p>
 
             <div class="grid-3">
-                <div class="card">
-                    <img class="card-img" src="./images/fansipan.jpg" alt="">
+                <div class="card" >
+                    <img class="card-img hidden" src="./images/fansipan.jpg" alt="">
                     <div class="card-content">
                         <h3  class="card-title">Đỉnh Fansipan</h3>
                         <p class="card-desc text">
@@ -123,7 +129,7 @@
                 </div>
         
                 <div class="card">
-                    <img class="card-img" src="./images/ma_pi_leng.jpg" alt="">
+                    <img class="card-img hidden" src="./images/ma_pi_leng.jpg" alt="">
                     <div class="card-content">
                         <h3  class="card-title">Đèo Mã Pí Lèng</h3>
                         <p class="card-desc text">
@@ -133,7 +139,7 @@
                 </div>
         
                 <div class="card">
-                    <img class="card-img" src="./images/cao_nguyen_da_Dong_Van.jpg" alt="Cao nguyên đá Đồng Văn">
+                    <img class="card-img hidden" src="./images/cao_nguyen_da_Dong_Van.jpg" alt="Cao nguyên đá Đồng Văn">
                     <div class="card-content">
                         <h3  class="card-title">Cao nguyên đá Đồng Văn</h3>
                         <p class="card-desc text">
@@ -329,4 +335,4 @@
 </body>
 </html>
 
-<script src="/js/main.js"></script>
+<script src="./js/main.js"></script>

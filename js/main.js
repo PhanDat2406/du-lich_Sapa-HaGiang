@@ -19,3 +19,14 @@ function showSlides(n)
 }
 
 
+function toggleMenu(event) {
+    event.preventDefault(); // tránh nhảy trang
+
+    let parent = event.target.parentElement;
+    let submenu = parent.querySelector(".sub-nav");
+
+    submenu.style.display =
+        submenu.style.display === "block" ? "none" : "block";
+}
+
+
